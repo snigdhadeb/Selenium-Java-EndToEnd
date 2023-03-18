@@ -1,0 +1,15 @@
+{
+  "regression": {
+    "TC001_SearchProductE2EAT": {
+      "user": "Demo User",
+      "producttype": "hoodie",
+      "productname": "Hero Hoodie",
+      "size": "M",
+      "color": "Green",
+      "quantity": "1",
+      "price": "$54.00",
+      "shipping method": "Table Rate"
+    }
+  },
+  "smoke": {}
+}
