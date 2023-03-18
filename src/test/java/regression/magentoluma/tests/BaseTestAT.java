@@ -121,6 +121,7 @@ public class BaseTestAT {
 			if(driver==null) {
 				ChromeOptions option = new ChromeOptions();
 				option.addArguments("--incognito");
+				option.addArguments("--remote-allow-origins=*");
 				//option.addArguments("--headless");
 				option.setAcceptInsecureCerts(true);
 				option.setPageLoadStrategy(PageLoadStrategy.NORMAL);
