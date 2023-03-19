@@ -3,8 +3,10 @@ package util.utilities;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import regression.magentoluma.tests.BaseTestAT;
@@ -40,5 +42,14 @@ public static JsonObject jsonObject;
 	*/
 	public String getTestData(String dataname){
 		return jsonObject.getAsJsonObject(test_type).getAsJsonObject(testcasename).get(dataname).getAsString();
+	}
+	
+	public ArrayList<String> getTestDataAsJsonArray(String dataname){
+		JsonArray ja =  jsonObject.getAsJsonObject(test_type).getAsJsonObject(testcasename).get(dataname).getAsJsonArray();
+		ArrayList<String> arrlist = new ArrayList<String>();
+		for(int i=0;i<ja.size();i++) {
+			arrlist.add(ja.get(i).getAsString());
+		}
+		return arrlist;
 	}
 }

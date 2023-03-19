@@ -8,6 +8,7 @@
   	<parameter name="browser" value="chrome" />
   	<classes>
   		<class name="regression.magentoluma.tests.TC001_SearchProductE2EAT" />
+  		<class name="regression.magentoluma.tests.TC002_SearchProductWithFiltersE2EAT" />
   	</classes>
   </test>
   

@@ -9,6 +9,16 @@
       "quantity": "1",
       "price": "$54.00",
       "shipping method": "Table Rate"
+    },
+    "TC002_SearchProductWithFiltersE2EAT":{
+    	 "user": "Demo User",
+    	 "main category": "Gear",
+    	 "sub category": "",
+    	 "product type": "Watches",
+    	 "filters": ["category","price", "activity"],
+    	 "category": "Electronic",
+    	 "price": "$40.00",
+    	 "activity": ""
     }
   },
   "smoke": {}

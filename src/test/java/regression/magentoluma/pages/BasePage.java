@@ -361,4 +361,9 @@ public class BasePage {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click(element).build().perform();
 	}
+	
+	public static void actionMouseHover(WebDriver driver, WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).perform();
+	}
 }
